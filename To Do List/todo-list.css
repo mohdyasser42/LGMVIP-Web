@@ -1,0 +1,94 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    background-color: darkorchid;
+}
+.title{
+    text-align: center;
+    padding-top: 2rem;
+    color: #fff;
+    letter-spacing: 1px;
+}
+.to-do{
+    text-align: center;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 3rem;
+}
+.task{
+    padding: 0.5rem 0.5rem;
+    width: 50%;
+    font-size: 20px;
+    color: cornflowerblue;
+    outline: none;
+    border: none;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.add-btn{
+    padding: 0.5rem 1rem;
+    font-size: 20px;
+    color: cornflowerblue;
+    background-color: lightblue;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    opacity: 0.6;
+}
+.add-btn.active{
+    opacity: 1;
+    pointer-events: all;
+}
+.add-btn:hover{
+    background-color: lightskyblue;
+}
+
+.task-list{
+    width: 75%;
+    margin: auto;
+    text-align: center;
+    margin-top: 2rem;
+}
+.items{
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: azure;
+}
+.items p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+    letter-spacing: 1px;
+}
+.item-btn{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.item-btn i{
+    color: #000;
+    font-size: 16px;
+    cursor: pointer;
+}
+.items.completed p{
+    text-decoration: line-through;
+    color: #fff;
+}
+.items.completed{
+    background-color: deepskyblue;
+}
+.items.completed i{
+    color: #fff;
+}

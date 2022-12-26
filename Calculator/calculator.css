@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.calc{
+    width: 26rem;
+    background-color: #1C2833;
+    border-radius: 20px;
+    padding: 1rem;
+
+}
+.screen{
+    height: 3rem;
+    width: 20.8rem;
+    border-radius: 5px;
+    margin: 1rem 0;
+}
+.one,.two,.three,.four,.five,.six,.seven,.eight,.nine,.dot,.zero,.equals{
+    padding: 1rem 3rem;
+    border-radius: 5px;
+    margin: 0.5rem 0.2rem;
+    background-color: darkviolet;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.divide,.subs,.add,.multi,.clear{
+    padding: 1rem;
+    border-radius: 5px;
+    margin: 0.5rem 0;
+    color: #fff;
+    background-color: darkviolet;
+    border: none;
+    cursor: pointer;
+}
+#red{
+    background-color: crimson;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 479px){
+    .calc{
+        width: 20rem;
+    }
+    .screen{
+        width: 14.5rem;
+        margin: 0.5rem 0;;
+    }
+    .one,.two,.three,.four,.five,.six,.seven,.eight,.nine,.dot,.zero,.equals{
+        padding: 1rem 2rem;
+    }
+    
+}
