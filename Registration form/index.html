@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="header">
+        <h2>Student Enrollment Form</h2>
+    </div>
+
+    <div class="register">
+        <form class="reg-form" name="myform" action="" onsubmit="getData(event);">
+           <label for="name">Name</label> 
+           <input type="text" class="name" required>
+           <label for="email">Email</label>
+           <input type="email" class="email" required>
+           <label for="website">Website</label>
+           <input type="text" class="website" required>
+           <label for="img-link">Image Link</label>
+           <input type="url" class="img-link" required>
+
+           <label for="gender">Gender</label>
+           <div class="gender-types">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" class="male" value="Male" required>
+            <label for="female">Female</label>
+            <input type="radio" name="gender" class="female" value="Female">
+            <label for="others">Others</label>
+            <input type="radio" name="gender" class="others" value="Others">
+           </div>
+
+           <label for="skill-area">Skills</label>
+           <div class="skill-area">
+            <label for="html">HTML</label>
+            <input type="checkbox" class="skills" value="HTML">
+            <label for="css">CSS</label>
+            <input type="checkbox" class="skills" value="CSS">
+            <label for="js">JS</label>
+            <input type="checkbox" class="skills" value="JS">
+           </div>
+
+           <button type="submit" value="submit" class="submit">Enroll Student</button>
+           <button type="reset" class="reset">Clear</button>
+        </form>
+    </div>
+
+    <div class="hr"><hr></div>
+
+    <div class="enrolled">
+        <h3>Enrolled Students</h3>
+        <div class="students">
+            <table>
+                <thead>
+                    <tr class="table-head">
+                        <th class="description">Description</th>
+                        <th>Image</th>
+                    </tr>
+                </thead>
+                <tbody id="display">
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="form.js"></script>
+</body>
+</html>

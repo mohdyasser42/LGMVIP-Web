@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+
+.header{
+    text-align: center;
+    padding: 0.5rem 0rem;
+    margin-bottom: 4rem;
+    background-color: #60ddac;
+    border-radius: 3px;
+    border-bottom: 4px solid #51c29f;
+}
+.header h2{
+    font-weight: 600;
+    color: snow;
+}
+
+.register{
+    width: 50%;
+    float: left;
+    border-right: 4px solid #60ddac;
+}
+.reg-form{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 50% 30%;
+    gap: 2rem 0;
+}
+.name,.email,.website,.img-link{
+    height: 2rem;
+    border-radius: 5px;
+    border-color: #51c29f;
+    font-size: 16px;
+}
+.gender-types input{
+    margin-right: 2px;
+}
+.skill-area input{
+    margin-right: 1rem;
+}
+.submit{
+    width: 9rem;
+    height: 3rem;
+    margin-left: 40%;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    background-color: cornflowerblue;
+    cursor: pointer;
+}
+.reset{
+    width: 6rem;
+    height: 3rem;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    background-color: crimson;
+    cursor: pointer;
+    margin-left: 0%;
+}
+
+.enrolled{
+    width: 50%;
+    float: right;
+}
+.enrolled h3{
+    text-align: center;
+}
+
+table{
+    margin-left: 10%;
+    margin-top: 1.5rem;
+    border-collapse: collapse;
+}
+th,td{
+    border: 2px  solid rgb(145, 198, 38);
+    border-collapse: collapse;
+    padding: 5px;
+    border-radius: 0px;
+    }
+.table-head{
+    text-align: left;
+    background-color:yellowgreen;
+    color: #fff;
+}
+td{
+    background-color: aliceblue;
+}
+td ul li{
+    list-style-type: none;
+}
+.description{
+    width: 25rem;
+}
+td img{
+    height: 7rem;
+    width: 7rem;
+}
+.hr{
+    display: none;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 479px){
+    .register{
+        float: none;
+        width: 100%;
+        border: none;
+    }
+
+    .enrolled{
+        float: none;
+        width: 100%;
+        margin-top: 3rem;
+    }
+
+    .gender-types input{
+        margin-right: 1rem;
+    }
+
+    .skill-area input{
+        margin-right: 3rem;
+    }
+    
+    .submit{
+        margin-left: 20%;
+    }
+
+    .reset{
+        margin-left: 40%;
+    }
+
+    table{
+        margin-left: 0%;
+    }
+
+    .hr{
+        margin-top: 2rem;
+        display: block;
+    }
+}
