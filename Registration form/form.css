@@ -74,6 +74,11 @@ body{
     text-align: center;
 }
 
+.students{
+    overflow: scroll;
+    overflow-x: hidden;
+    height: 24rem;
+}
 table{
     margin-left: 10%;
     margin-top: 1.5rem;
@@ -143,5 +148,10 @@ td img{
     .hr{
         margin-top: 2rem;
         display: block;
+    }
+
+    .students{
+        overflow: hidden;
+        height: auto;
     }
 }

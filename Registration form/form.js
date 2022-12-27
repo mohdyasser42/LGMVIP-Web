@@ -1,4 +1,4 @@
-let arrVal = [{name:"yasser",mail:"yasser@mail.com",website:"www.yasser.com",img:"https://i.kym-cdn.com/entries/icons/mobile/000/037/848/cover2.jpg",gender:"Male",checkval:["Html","CSS","JS"]},];
+let arrVal = [{name:"Mohd Yasser",mail:"yasser@mail.com",website:"www.yasser.com",img:"https://i.kym-cdn.com/entries/icons/mobile/000/037/848/cover2.jpg",gender:"Male",checkval:["Html","CSS","JS"]},];
 getData=(e)=>{
     e.preventDefault();
 let Value = {name:"",mail:"",website:"",img:"",gender:"",checkval:[]};
